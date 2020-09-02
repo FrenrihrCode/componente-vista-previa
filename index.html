@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+  <main>
+    <section class="main-card">
+      <div class="img-card">
+      </div>
+      <div class="content-card">
+        <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
+          got some simple tips to help you make any room feel complete.
+        </p>
+      </div>
+      <div class="footer-card">
+        <div id="modal-media" class="modal-media">
+          <span>SHARE</span>
+          <img src="images/icon-facebook.svg" alt="Facebook">
+          <img src="images/icon-twitter.svg" alt="Twitter">
+          <img src="images/icon-pinterest.svg" alt="Pinterest">
+        </div>
+        <div class="profile-data">
+          <span class="img-avatar"></span>
+          <div class="username">
+            <strong>Michelle Appleton</strong>
+            <p>28 Jun 2020</p>
+          </div>
+        </div>
+        <i id="icon-share" onclick="showModal()" class="icon-share"></i>
+      </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script>
+    const showModal = () => {
+      const iconShare = document.getElementById('icon-share');
+      const modalMedia = document.getElementById('modal-media');
+      iconShare.classList.toggle('active');
+      modalMedia.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
